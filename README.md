@@ -1,4 +1,3 @@
-```markdown
 # Retail Demand Forecasting & Pricing Analytics
 
 ### An End-to-End Retail Analytics Project Using PostgreSQL, Python, CatBoost & Power BI
@@ -9,7 +8,7 @@ The project combines **PostgreSQL/SQL, Python, CatBoost, and Power BI** to demon
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 Retail businesses need to understand how much demand to expect across products and stores in order to support inventory planning, operational decisions, and pricing analysis.
 
@@ -29,7 +28,7 @@ This project uses historical retail sales data to:
 
 ---
 
-## 🎯 Business Objectives
+##  Business Objectives
 
 The project addresses four main questions:
 
@@ -55,9 +54,9 @@ The project addresses four main questions:
 
 ---
 
-## 🏗️ Project Workflow
+##  Project Workflow
 
-```text
+
 Raw Retail Data
        ↓
 PostgreSQL / SQL
@@ -81,11 +80,11 @@ Pricing & Demand Analysis
 Power BI Dashboard
        ↓
 Business Insights & Recommendations
-```
+
 
 ---
 
-## 📊 Dataset
+##  Dataset
 
 The project uses a large retail sales dataset containing approximately **7.43 million sales records**.
 
@@ -101,11 +100,11 @@ The raw dataset is **not included in this repository**.
 
 ---
 
-## 🗄️ SQL & PostgreSQL
+##  SQL & PostgreSQL
 
 The SQL workflow is organized into four stages:
 
-```text
+
 01_schema_setup.sql
         ↓
 02_data_quality_checks.sql
@@ -113,7 +112,7 @@ The SQL workflow is organized into four stages:
 03_analytics_layer.sql
         ↓
 04_business_analysis.sql
-```
+
 
 ### 01 — Schema Setup
 
@@ -153,7 +152,7 @@ Contains business-facing SQL analysis including:
 
 ---
 
-## 📈 Exploratory Data Analysis
+##  Exploratory Data Analysis
 
 The EDA stage investigates:
 
@@ -170,7 +169,7 @@ One important finding was that product-store demand is relatively sparse, which 
 
 ---
 
-## 🤖 Demand Forecasting
+##  Demand Forecasting
 
 ### Forecasting Population
 
@@ -189,15 +188,15 @@ Negative quantities were investigated during data-quality analysis.
 
 For forecasting, negative quantities were excluded from the demand target rather than treating them as positive demand:
 
-```python
+
 demand_quantity = quantity.where(quantity >= 0, NaN)
-```
+
 
 This separates unusual transaction adjustments from the demand signal being forecast.
 
 ---
 
-## 🧠 Forecasting Features
+##  Forecasting Features
 
 The model uses time-aware historical features including:
 
@@ -224,7 +223,7 @@ Features were constructed using historical information to avoid directly using f
 
 ---
 
-## 📉 Forecasting Models
+##  Forecasting Models
 
 Simple baselines were established before training the machine-learning model.
 
@@ -244,7 +243,7 @@ The final CatBoost model was selected based primarily on **MAE and WAPE**, while
 
 ---
 
-## 🔍 Final Model
+##  Final Model
 
 The final model is a **CatBoostRegressor** trained with:
 
@@ -258,19 +257,19 @@ The model uses categorical features for product, store, store format, city, and 
 
 The trained model is available in:
 
-```text
+
 models/catboost_v4.cbm
-```
+
 
 The feature configuration is stored in:
 
-```text
+
 models/feature_config.json
-```
+
 
 ---
 
-## 📊 Final Forecast Performance
+##  Final Forecast Performance
 
 The selected model achieved:
 
@@ -285,7 +284,7 @@ The model performs substantially better than the simple lag and rolling baseline
 
 ---
 
-## 📦 Performance by Demand Band
+##  Performance by Demand Band
 
 Forecast performance varies considerably depending on the underlying demand level.
 
@@ -300,7 +299,7 @@ This highlights an important characteristic of retail forecasting: **percentage-
 
 ---
 
-## 💰 Pricing Analysis
+##  Pricing Analysis
 
 The project also examines the relationship between pricing and observed demand patterns.
 
@@ -317,7 +316,7 @@ Therefore, this project does not claim to estimate price elasticity or determine
 
 ---
 
-## 📊 Power BI Dashboard
+##  Power BI Dashboard
 
 The Power BI dashboard contains three main views.
 
@@ -360,15 +359,15 @@ Focuses on:
 
 Dashboard screenshots are available in:
 
-```text
+
 powerbi/
-```
+
 
 The `.pbix` source file is not included because of its file-size limitation.
 
 ---
 
-## 💡 Key Business Insights
+##  Key Business Insights
 
 ### 1. Demand is concentrated across stores
 
@@ -396,7 +395,7 @@ Lagged price contributes meaningfully to the model, but the analysis does not es
 
 ---
 
-## ⚠️ Limitations
+##  Limitations
 
 Several limitations should be considered when interpreting the results:
 
@@ -411,7 +410,7 @@ Several limitations should be considered when interpreting the results:
 
 ---
 
-## 🚀 Future Improvements
+##  Future Improvements
 
 Potential extensions include:
 
@@ -427,9 +426,9 @@ Potential extensions include:
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 
-```text
+
 retail-demand-pricing/
 │
 ├── sql/
@@ -454,7 +453,7 @@ retail-demand-pricing/
 │   └── Retail_Demand_Forecasting_Pricing_Analytics.pdf
 │
 └── README.md
-```
+
 
 ---
 
@@ -462,13 +461,13 @@ retail-demand-pricing/
 
 A detailed project report covering the methodology, analysis, forecasting approach, evaluation, dashboard, insights, limitations, and future improvements is available in:
 
-```text
+
 report/
-```
+
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Disha Chaudhari**
 
