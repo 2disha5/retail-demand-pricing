@@ -426,38 +426,10 @@ Potential extensions include:
 
 ---
 
-##  Repository Structure
-
-
-retail-demand-pricing/
-│
-├── sql/
-│   ├── 01_schema_setup.sql
-│   ├── 02_data_quality_checks.sql
-│   ├── 03_analytics_layer.sql
-│   └── 04_business_analysis.sql
-│
-├── notebooks/
-│   └── 01_EDA.ipynb
-│
-├── models/
-│   ├── catboost_v4.cbm
-│   └── feature_config.json
-│
-├── powerbi/
-│   ├── executive_overview.png
-│   ├── demand_pricing.png
-│   └── forecast_performance.png
-│
-├── report/
-│   └── Retail_Demand_Forecasting_Pricing_Analytics.pdf
-│
-└── README.md
-
 
 ---
 
-## 📄 Project Report
+##  Project Report
 
 A detailed project report covering the methodology, analysis, forecasting approach, evaluation, dashboard, insights, limitations, and future improvements is available in:
 
@@ -474,4 +446,4 @@ report/
 This project was developed as a portfolio project to demonstrate practical skills in:
 
 **SQL → Data Analysis → Machine Learning → Forecast Evaluation → Business Intelligence**
-```
+
