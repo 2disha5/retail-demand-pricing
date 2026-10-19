@@ -424,7 +424,35 @@ Potential extensions include:
 - Scheduled model retraining
 - More detailed product-level segmentation
 
+---
 
+## 📁 Repository Structure
+
+```text
+retail-demand-pricing/
+├── sql/
+│   ├── 01_schema_setup.sql
+│   ├── 02_data_quality_checks.sql
+│   ├── 03_analytics_layer.sql
+│   └── 04_business_analysis.sql
+│
+├── notebooks/
+│   └── 01_EDA.ipynb
+│
+├── models/
+│   ├── catboost_v4.cbm
+│   └── feature_config.json
+│
+├── powerbi/
+│   ├── executive_overview.png
+│   ├── demand_pricing.png
+│   └── forecast_performance.png
+│
+├── report/
+│   └── Retail_Demand_Forecasting_Pricing_Analytics.pdf
+│
+└── README.md
+```
 
 ---
 
