@@ -39,7 +39,7 @@ The project addresses four main questions:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Area | Tools |
 |---|---|
@@ -424,7 +424,6 @@ Potential extensions include:
 - Scheduled model retraining
 - More detailed product-level segmentation
 
----
 
 
 ---
